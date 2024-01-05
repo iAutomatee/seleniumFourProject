@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" parallel="tests" thread-count="2">
+    <parameter name="URL" value="https://demoqa.com/"></parameter>
+    <listeners>
+        <listener class-name="utills.Listeners.TestListener"/>
+    </listeners>
+
+<!--    <parameter name="URL" value="abc.com"></parameter>-->
+<!--    <test name="Regression Group Test">-->
+<!--&lt;!&ndash;        <groups>&ndash;&gt;-->
+<!--&lt;!&ndash;            <run>&ndash;&gt;-->
+<!--&lt;!&ndash;                <exclude name="Widgets"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <include name="Widgets"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <include name="Elements"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <include name="data"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </run>&ndash;&gt;-->
+<!--&lt;!&ndash;        </groups>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="tests.widgets.WidgetsTest"/>-->
+<!--            <class name="tests.BrokenLinksTests"/>-->
+<!--&lt;!&ndash;            <class name="tests.elements.ElementTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="tests.elements.TextBoxTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="tests.elements.RadioButtonTest"/>&ndash;&gt;-->
+
+<!--        </classes>-->
+
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+    <test name="Broken Links">
+        <classes>
+            <class name="tests.elements.ElementTest"/>
+        </classes>
+
+    </test> <!-- Test -->
+
+    <!--    <test name="Test Elements">-->
+    <!--        <classes>-->
+    <!--            <class name="tests.elements.ElementTest"/>-->
+    <!--            <class name="tests.elements.TextBoxTest"/>-->
+    <!--            <class name="tests.elements.RadioButtonTest"/>-->
+
+    <!--            &lt;!&ndash;            <class name="tests.elements.CheckBoxTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="tests.elements.ButtonTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="tests.elements.LinksTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="tests.elements.BrokenLinksAndImagesTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="tests.elements.UploadAndDownloadTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="tests.elements.DynamicTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="forms.FormFillTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="alertFrames.WindowsHandleTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="alertFrames.AlertTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="alertFrames.FrameTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="alertFrames.NestedFrameTest"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <class name="tests.widgets.WidgetsTest"/>&ndash;&gt;-->
+    <!--        </classes>-->
+    <!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+
+    <!--    <test name="Test Widgets">-->
+    <!--        <classes>-->
+    <!--            <class name="tests.widgets.WidgetsTest">-->
+    <!--                <methods>-->
+    <!--                    &lt;!&ndash;                <exclude name="verifyToolTips"></exclude>&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                <exclude name="verifyMenus"></exclude>&ndash;&gt;-->
+    <!--                    &lt;!&ndash;                <include name="verifySlider"></include>&ndash;&gt;-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--        </classes>-->
+
+    <!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+</suite> <!-- Suite -->
